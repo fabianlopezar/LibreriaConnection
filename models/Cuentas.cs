@@ -18,6 +18,16 @@ namespace LibreriaConnection.models
      private string fechaNacimiento;
      private string contraseniaCuenta;
 
+      public int idCuenta { get => idCuenta; set => idCuenta = value; }
+      public int nombre1Cuenta { get => nombre1Cuenta; set => nombre1Cuenta = value; }
+      public int nombre2Cuenta { get => nombre2Cuenta; set => nombre2Cuenta = value; }
+      public int apellido1Cuenta { get => apellido1Cuenta; set => apellido1Cuenta = value; }
+      public int apellido2Cuenta { get => apellido2Cuenta; set => apellido2Cuenta = value; }
+      public int direccionCuenta { get => direccionCuenta; set => direccionCuenta = value; }
+      public int foto { get => foto; set => foto = value; }
+      public int fechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
+      public int contraseniaCuenta { get => contraseniaCuenta; set => contraseniaCuenta = value; }
+
         public Cuentas()
         {
 
@@ -43,5 +53,6 @@ namespace LibreriaConnection.models
             this.idCuenta=idCuenta;
             this.nombre1Cuenta=nombre1Cuenta;
         }
+
     }
 }

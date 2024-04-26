@@ -18,7 +18,7 @@ namespace LibreriaConnection.models
 
         public Categorias()
         {
-
+           
         }
 
         public Categorias(int idCategoria, string nombreCategoria)
