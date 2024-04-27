@@ -49,6 +49,34 @@ namespace LibreriaConnection.models
             }
             return listaC;
         }
+        internal List<Cuentas> SelectCuentas(string sql)
+        {
+            List<Cuentas> listaCuentas = new List<Cuentas>();
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand(sql, DataSource());
+                ConnectOpened();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int idCuenta = reader.GetInt32(0);
+                        string nameCuenta = reader.GetString(1);
+                        listaCuentas.Add(new Cuentas(idCuenta, nameCuenta));
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error " + e.Message);
+            }
+            finally
+            {
+                ConnectClosed();
+            }
+            return listaCuentas;
+        }
 
         public bool ExecuteQuery(string sql)
         {
