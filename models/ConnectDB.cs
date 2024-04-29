@@ -7,20 +7,20 @@ using MySql.Data.MySqlClient;
 
 namespace LibreriaConnection.models
 {
-    class ConnectDB
+    class ConnectDB//video 01 min 18:00
     {
         public MySqlConnection connManager = new MySqlConnection();
         string server = "127.0.0.1;";
         string database = "libreria;";
         string user = "root;";
-        string pass = "root;";
+        string pass = "maxwell55A@;";
 
         public MySqlConnection DataSource()
         {
             connManager = new MySqlConnection($"server={server} database={database}Uid={user} password={pass}");
             return connManager;
         }
-
+        #region SELECTS
         internal List<Categorias> SelectCategorias(string sql)
         {
             List<Categorias> listaC = new List<Categorias>();
@@ -61,9 +61,10 @@ namespace LibreriaConnection.models
                 {
                     while (reader.Read())
                     {
-                        int idCuenta = reader.GetInt32(0);
-                        string nameCuenta = reader.GetString(1);
-                        listaCuentas.Add(new Cuentas(idCuenta, nameCuenta));
+                        int _idCuenta = reader.GetInt32(0);
+                        string _nombre1Cuenta = reader.GetString(1);
+                        string _nombre2Cuenta = reader.GetString(2);
+                        listaCuentas.Add(new Cuentas(_idCuenta, _nombre1Cuenta, _nombre2Cuenta));
                     }
                 }
             }
@@ -77,7 +78,7 @@ namespace LibreriaConnection.models
             }
             return listaCuentas;
         }
-
+        #endregion
         public bool ExecuteQuery(string sql)
         {
             bool result = false;

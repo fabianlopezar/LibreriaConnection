@@ -67,7 +67,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(299, 211);
+            this.comboBox1.Location = new System.Drawing.Point(297, 211);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(193, 33);
             this.comboBox1.TabIndex = 6;
@@ -94,6 +94,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UIUpdateCuentas";
             this.Text = "UIUpdateCuentas";
+            this.Load += new System.EventHandler(this.SelectCuenta);
             this.ResumeLayout(false);
             this.PerformLayout();
 

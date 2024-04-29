@@ -18,6 +18,8 @@ namespace LibreriaConnection.models
      private string fechaNacimiento;
      private string contraseniaCuenta;
 
+
+
         public Cuentas()
         {
         }
@@ -31,6 +33,11 @@ namespace LibreriaConnection.models
         {
             this.IdCuenta = idCuenta;
             this.Nombre1Cuenta = nombre1Cuenta;
+        }
+
+        public Cuentas(int idCuenta, string nombre1Cuenta, string nombre2Cuenta) : this(idCuenta, nombre1Cuenta)
+        {
+            this.nombre2Cuenta = nombre2Cuenta;
         }
 
         public Cuentas(int idCuenta, string nombre1Cuenta, string nombre2Cuenta, string apellido1Cuenta, string apellido2Cuenta, string direccionCuenta, string foto, string fechaNacimiento, string contraseniaCuenta)
