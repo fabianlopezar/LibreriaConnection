@@ -1,6 +1,6 @@
 ﻿namespace LibreriaConnection.views
 {
-    partial class UIUpdateCuentas
+    partial class UIUpdateEditoriales
     {
         /// <summary>
         /// Required designer variable.
@@ -39,52 +39,55 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(321, 183);
+            this.label2.Location = new System.Drawing.Point(300, 192);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 25);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Select  Cuenta";
+            this.label2.Size = new System.Drawing.Size(162, 25);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Select  Editorial";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(291, 343);
+            this.button1.Location = new System.Drawing.Point(270, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(201, 34);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Update Cuenta";
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Update Editorial";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(299, 306);
+            this.textBox1.Location = new System.Drawing.Point(278, 315);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(193, 31);
-            this.textBox1.TabIndex = 7;
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(297, 211);
+            this.comboBox1.Location = new System.Drawing.Point(276, 220);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(193, 33);
-            this.comboBox1.TabIndex = 6;
+            this.comboBox1.TabIndex = 11;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.SelectItem);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(235, 55);
+            this.label1.Location = new System.Drawing.Point(214, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 55);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Update Cuentas";
+            this.label1.Size = new System.Drawing.Size(416, 55);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Update Editoriales";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // UIUpdateCuentas
+            // UIUpdateEditoriales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -94,9 +97,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Name = "UIUpdateCuentas";
-            this.Text = "UIUpdateCuentas";
-            this.Load += new System.EventHandler(this.SelectCuenta);
+            this.Name = "UIUpdateEditoriales";
+            this.Text = "UIUpdateEditoriales";
+            this.Load += new System.EventHandler(this.SelectEditoriales);
             this.ResumeLayout(false);
             this.PerformLayout();
 

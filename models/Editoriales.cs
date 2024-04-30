@@ -8,11 +8,11 @@ namespace LibreriaConnection.models
 {
     class Editoriales
     {
-        private int idEditoriales;
+        private int idEditorial;
         private string nombreEditorial;
 
         public string NombreEditorial { get => nombreEditorial; set => nombreEditorial = value; }
-        public int IdEditoriales { get => idEditoriales; set => idEditoriales = value; }
+        public int IdEditorial { get => idEditorial; set => idEditorial = value; }
 
         public Editoriales()
         {
@@ -23,9 +23,9 @@ namespace LibreriaConnection.models
             this.nombreEditorial = nombreEditorial;
         }
 
-        public Editoriales(int idEditoriales, string nombreEditorial)
+        public Editoriales(int idEditorial, string nombreEditorial)
         {
-            this.idEditoriales = idEditoriales;
+            this.idEditorial = idEditorial;
             this.nombreEditorial = nombreEditorial;
         }
     }

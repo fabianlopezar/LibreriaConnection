@@ -100,6 +100,7 @@
   <ItemGroup>
     <Compile Include="controller\ControllerCategorias.cs" />
     <Compile Include="controller\ControllerCuentas.cs" />
+    <Compile Include="controller\ControllerEditorial.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +133,12 @@
     <Compile Include="views\UIUpdateCuentas.Designer.cs">
       <DependentUpon>UIUpdateCuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\UIUpdateEditoriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UIUpdateEditoriales.Designer.cs">
+      <DependentUpon>UIUpdateEditoriales.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -146,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\UIUpdateCuentas.resx">
       <DependentUpon>UIUpdateCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UIUpdateEditoriales.resx">
+      <DependentUpon>UIUpdateEditoriales.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

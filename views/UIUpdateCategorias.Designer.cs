@@ -39,7 +39,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(127, 9);
+            this.label1.Location = new System.Drawing.Point(155, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 55);
             this.label1.TabIndex = 0;
@@ -79,11 +79,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(244, 118);
+            this.label2.Location = new System.Drawing.Point(250, 118);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 25);
+            this.label2.Size = new System.Drawing.Size(182, 25);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Select  Categoria";
+            this.label2.Text = "Select Categorias";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // UIUpdateCategorias

@@ -14,6 +14,8 @@ namespace LibreriaConnection.views
 {
     public partial class UIUpdateCuentas : Form
     {
+        List<Cuentas> listaCuentas;
+        string cuentaOriginal;
         public UIUpdateCuentas()
         {
             InitializeComponent();
@@ -22,16 +24,45 @@ namespace LibreriaConnection.views
         private void SelectCuenta(object sender, EventArgs e)
         {
             ControllerCuentas objcc = new ControllerCuentas();
-            List<Cuentas> listaCuentas = objcc.SelectCuentas();
+            listaCuentas = objcc.SelectCuentas();
+
             for (int i = 0; i < listaCuentas.Count; i++)
             {
                 string _nombre1Cuenta = listaCuentas[i].Nombre1Cuenta;
-                string _nombre2Cuenta = listaCuentas[i].Nombre2Cuenta;
-                     
-                comboBox1.Items.Add(_nombre1Cuenta + " " + _nombre2Cuenta);
+                
+                comboBox1.Items.Add(_nombre1Cuenta );
 
             }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string cuentaUpdate = textBox1.Text;
+            ControllerCuentas objCC = new ControllerCuentas();
+            int idCuenta = 0;
+            for (int i = 0; i < listaCuentas.Count; i++)
+            {
+                if (listaCuentas[i].Nombre1Cuenta.Equals(cuentaOriginal))
+                {
+                    idCuenta = listaCuentas[i].IdCuenta;
+                }
+            }
+            Cuentas objCuentas = new Cuentas(idCuenta, cuentaUpdate);
+            bool result = objCC.UpdateCuentas(objCuentas);
+            if (result)
+            {
+                MessageBox.Show("Modificacion Correcta");
+            }
+            else
+            {
+                MessageBox.Show("Modificacion Incorrecta");
+            }
+        }
 
+
+        private void SelectItem(object sender, EventArgs e)
+        {
+            textBox1.Text = comboBox1.GetItemText(comboBox1.SelectedItem);
+            cuentaOriginal = comboBox1.GetItemText(comboBox1.SelectedItem);
         }
     }
 }
