@@ -121,6 +121,18 @@
     <Compile Include="models\Telefonos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="views\UICreateCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UICreateCategoria.Designer.cs">
+      <DependentUpon>UICreateCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\UICreateCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UICreateCuenta.Designer.cs">
+      <DependentUpon>UICreateCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\UIUpdateCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +160,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="views\UICreateCategoria.resx">
+      <DependentUpon>UICreateCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UICreateCuenta.resx">
+      <DependentUpon>UICreateCuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\UIUpdateCategorias.resx">
       <DependentUpon>UIUpdateCategorias.cs</DependentUpon>
     </EmbeddedResource>
