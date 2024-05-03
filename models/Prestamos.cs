@@ -13,31 +13,6 @@ namespace LibreriaConnection.models
         private string fechaDevolucion;
         private bool estaVencido;
         private int idCuentaPrestamo;
-        private int idLibroPrestamo;
-
-        public Prestamos()
-        {
-        }
-
-        public Prestamos(string fechaPrestamo)
-        {
-            this.fechaPrestamo = fechaPrestamo;
-        }
-
-        public Prestamos(int idPrestamo, string fechaPrestamo)
-        {
-            this.idPrestamo = idPrestamo;
-            this.fechaPrestamo = fechaPrestamo;
-        }
-
-        public Prestamos(int idPrestamo, string fechaPrestamo, string fechaDevolucion, bool estaVencido, int idCuentaPrestamo, int idLibroPrestamo)
-        {
-            this.idPrestamo = idPrestamo;
-            this.fechaPrestamo = fechaPrestamo;
-            this.fechaDevolucion = fechaDevolucion;
-            this.estaVencido = estaVencido;
-            this.idCuentaPrestamo = idCuentaPrestamo;
-            this.idLibroPrestamo = idLibroPrestamo;
-        }
+       
     }
 }

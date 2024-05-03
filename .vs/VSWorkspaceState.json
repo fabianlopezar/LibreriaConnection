@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\controller",
+    "\\views"
   ],
+  "SelectedNode": "\\controller\\ControllerPaises.cs",
   "PreviewInSolutionExplorer": false
 }
