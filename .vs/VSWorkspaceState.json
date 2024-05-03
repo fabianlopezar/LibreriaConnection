@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\controller",
-    "\\views"
+    "\\models"
   ],
-  "SelectedNode": "\\controller\\ControllerPaises.cs",
+  "SelectedNode": "\\models\\ConnectDB.cs",
   "PreviewInSolutionExplorer": false
 }
